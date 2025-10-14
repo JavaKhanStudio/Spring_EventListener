@@ -11,7 +11,7 @@ public class EmailBienvenueListener {
     @EventListener
     public BienvenueCreeeEvent genererMessageBienvenue(UtilisateurInscritEvent event) {
         String corps = "Bienvenue " + event.getPseudo() + " !";
-        System.out.println("[email] Préparation du message pour " + event.getPseudo());
+        System.out.println("[email] Préparation du message pour " + event.getPseudo() + " Démarrage à" + event.getQuand());
         return new BienvenueCreeeEvent(event.getPseudo(), corps);
     }
 }

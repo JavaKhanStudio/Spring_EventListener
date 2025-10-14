@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: listener-demo
+
+logging:
+  level:
+    root: info
+    com.example.evenements: debug
+
+app:
+  stats:
+    pause-ms: 600
